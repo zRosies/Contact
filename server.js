@@ -5,10 +5,10 @@ const cors = require("cors");
 const route = require('./src/routes/routes')
 
 const port = process.env.PORT;
-
 const app = express();
 
-// Route
+
+
 app
   .use(bodyParser.json())
   .use(cors({ origin: '*' }))
