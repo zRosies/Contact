@@ -1,0 +1,31 @@
+npm install swagger-ui-express
+npm install --save-dev swagger-autogen
+
+
+====================Command to auto create swaggerJson=========================
+
+const swaggerJSDoc = require('swagger-jsdoc');
+
+const options = {
+  swaggerDefinition: {
+    openapi: '3.0.0',
+    info: {
+      title: 'Employee API',
+      version: '1.0.0',
+      description: 'API for managing employee information',
+    },
+  },
+  apis: ['../controllers/temple.js'], // Replace with the path to your controller files
+};
+
+module.exports = swaggerJSDoc(options);
+
+==================================================================================================================
+
+
+
+=======================Command to define the jsdoc correctly in the package.json=================================== 
+
+generate : 'swagger-jsdoc -d swaggerdef.js -o swagger.json ./controllers/*.js'
+1-swagerDoc    2-filethatwilldothework  3-nameofthejsonfileyouwant 4-wherethecontrolefileis
+==================================================================================================================
