@@ -154,7 +154,7 @@
             "type": "string"
           }
         },
-        "required": ["firstName", "lastName", "salary", "job", "email"]
+        "required": ["firstName", "lastName", "favoriteColor", "birthday", "email"]
       }
     }
   }

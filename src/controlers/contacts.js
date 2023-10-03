@@ -87,10 +87,11 @@ const createContact= async (req,res)=>{
 const deleteContact= async(req,res)=>{
     const id = new ObjectId(req.params.id);
     const response= await mongodb.getDb().db('test').collection('contacts').deleteOne({_id: id})
+    console.log(response);
 
     try{
         if (response.acknowledged) {
-            res.status(200).json( `item ${_id} removed + ${response}`);
+            res.status(200).json( `item ${id} removed`);
             console.log(id + ' item removed')
         } 
         else {
@@ -116,7 +117,7 @@ const updateContact= async (req,res)=>{
     try{
         if (response.acknowledged) {
             res.status(204).json(`Contact updated`);
-            console.log(id+ 'item updated')
+            console.log(id + 'item updated')
         } 
         else {
             res.status(500).json(response.error || 'Some error occurred while creating the contact.');}

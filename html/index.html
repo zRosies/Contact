@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <script src="scripts.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Add a contact</a>
+            <a href="#">contacts</a>
+        </nav>
+    </header>
+    <main>
+        <form id="contactForm">
+            <!-- Input fields -->
+            <label for="firstName">First Name:</label>
+            <input id="firstName" type="text" name="firstName" required>
+          
+            <label for="lastName">Last Name:</label>
+                <input id="lastName" type="text" name="lastName" required>
+         
+            <label for="favoriteColor"> favoriteColor: </label>
+                <input id="salary" type="text" name="favoriteColor" required>
+          
+            <label for="Birthday"> Birthday: </label>
+                <input id="birthday" type="date" name="birthday" required>
+           
+            <label for="email">Email: </label>
+                <input id="email" type="text" name="email" required>
+            <label for="id">Contact ID</label>    
+                <input id="email" type="text" name="id">
+            
+         
+            
+            <input type="submit" value="submit">
+            
+          
+                    
+            <!-- Other input fields -->
+            
+        </form>
+        <form id="deleteForm">
+            <label for="id">ID:</label>
+            <input id="id" type="text">
+
+            <button type="submit" name="delete">Delete</button>
+
+        </form>
+    </main>
+
+    
+</body>
+</html>
