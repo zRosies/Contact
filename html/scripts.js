@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (_id === '') {
       try {
-        const response = await fetch('http://localhost:7070/contacts/', {
+        const response = await fetch('https://contactapiupdated.onrender.com/contacts/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
