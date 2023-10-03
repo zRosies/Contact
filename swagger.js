@@ -1,3 +1,5 @@
+const { env } = require('process');
+
 const swaggerAutogen = require('swagger-autogen')();
 
     const doc = {
@@ -5,7 +7,7 @@ const swaggerAutogen = require('swagger-autogen')();
         title: 'My API',
         description: 'My first API Documentarion',
     },
-    host: 'localhost:7070',
+    host: process.env.PORT,
     schemes: ['http'],
     };
 
